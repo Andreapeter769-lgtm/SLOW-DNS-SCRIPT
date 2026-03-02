@@ -15,7 +15,7 @@ fi
 # ============================================================================
 SSHD_PORT=22
 SLOWDNS_PORT=5300
-GITHUB_BASE="https://raw.githubusercontent.com/iddie15/SLOW-DNS-SCRIPT/main/DNSTT%20MODED"
+GITHUB_BASE="https://raw.githubusercontent.com/Andreapeter769-lgtm/SLOW-DNS-SCRIPT/main/DNSTT%20MODED"
 
 # ============================================================================
 # MODERN COLORS & DESIGN
@@ -247,7 +247,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=$SLOWDNS_BINARY -udp :$SLOWDNS_PORT -mtu 1500 -privkey-file /etc/slowdns/server.key $NAMESERVER 127.0.0.1:$SSHD_PORT
+ExecStart=$SLOWDNS_BINARY -udp :$SLOWDNS_PORT -mtu 1200 -privkey-file /etc/slowdns/server.key $NAMESERVER 127.0.0.1:$SSHD_PORT
 Restart=always
 RestartSec=5
 User=root
@@ -301,7 +301,7 @@ EOF
 #define MAX_EVENTS 4096
 #define REQ_TABLE_SIZE 65536
 #define EXT_EDNS 512
-#define INT_EDNS 1500
+#define INT_EDNS 1200
 
 typedef struct {
     int fd;
@@ -722,8 +722,8 @@ EOF
     echo -e "${GREEN}${BOLD}║${NC}    ${WHITE}🔧 Ready for DNS tunneling${NC}                         ${GREEN}${BOLD}║${NC}"
     echo -e "${GREEN}${BOLD}╚══════════════════════════════════════════════════════════╝${NC}"
     
-    echo -e "\n${YELLOW}${BOLD}📞 Need help? Contact support: @esimfreegb${NC}"
-    echo -e "${YELLOW}${BOLD}💡 Documentation: https://github.com/chiddy80/Halotel-Slow-DNS${NC}"
+    echo -e "\n${YELLOW}${BOLD}📞 Need help? Contact support: @inc🦜 0689000656${NC}"
+    echo -e "${YELLOW}${BOLD}💡 Documentation: WE ARE VENOM🔥☠${NC}"
     
     echo -e "\n${WHITE}${BOLD}Press Enter to return to terminal...${NC}"
     read -r
@@ -812,6 +812,7 @@ else
     echo -e "\n${RED}✗ Installation failed${NC}"
     exit 1
 fi
+
 
 
 
